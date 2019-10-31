@@ -11,13 +11,7 @@ document.addEventListener('DOMContentLoaded', function(e){
 
 function fetchImage() {
   fetch(imgUrl)
-    // .then (function(response) {
-    //   return response.json();
-    // })
     .then (response => response.json())
-    // .then (function(json) {
-    //   addImage(json)
-    // })
     .then (json => addImage(json));
 };
 
